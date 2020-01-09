@@ -2,7 +2,8 @@ require_relative 'config/environment'
 
 class App < Sinatra::Base
   get '/reverse' do
-    puts params
+   original_string= params[:string]
+   
     erb :reverse
   end
 
